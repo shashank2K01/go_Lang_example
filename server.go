@@ -62,6 +62,12 @@ func main() {
 		viewRoutes.GET("/videos", videoController.ShowAll)
 
 	}
-
+	/*
+	   port := os.Getenv("PORT")
+	   if port==""{
+	   	port ="5000"
+	   }
+	   server.Run(":"+port)
+	*/
 	server.Run(":8085")
 }
